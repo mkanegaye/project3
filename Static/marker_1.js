@@ -18,7 +18,7 @@ d3.json(url).then(function(response) {
 
   //console.log(features);
 
-  // Comment this line in to render all 80,000 markers
+  // Comment this line in to render all 80,000 markers*************we still need to change this file to match our geojsons**********************************
   // let marker_limit = features.length;
   let marker_limit = 1000;
 
