@@ -19,6 +19,6 @@ Avoiding Data Misuse: Ethical practices help prevent the misuse of data, such as
 Social Responsibility: Kept in mind data practices that reflect a broader sense of social responsibility, acknowledging the impact that data collection and the analysis of it can have on society at large. It’s about using data not just legally, but also in ways that contribute positively to societal well-being.
 
 ### References (Sources):
-https://github.com/svitkin/leaflet-timeline-slider/
-https://catalog.data.gov/dataset/crime-incidents-in-2020
-https://catalog.data.gov/dataset/crime-incidents-in-2021
+- https://github.com/svitkin/leaflet-timeline-slider/
+- https://catalog.data.gov/dataset/crime-incidents-in-2020
+- https://catalog.data.gov/dataset/crime-incidents-in-2021
