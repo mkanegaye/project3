@@ -5,9 +5,9 @@
 ### Group Members: Meghan Kanygaye, Jason Crespo, Alex Maciel, Brian Loutzenhiser
 
 ### Purpose:
-The main purpose of the third project for our group is to investigate in differences of Crime Incidents in between the two years of data in the project regarding current events. 
-In regards to specific current events of how things escalate quickly within the policital space around D.C.
-As to also bring awareness of the state of certain areas to potential help others be aware so they can stay safe during political seasons.
+The main purpose of the third project for our group is to investigate the differences in Crime Incidents within the two years of data all regarding current events. 
+In regards to specific current events; how things escalate quickly within the policital space around D.C.
+As to also bring awareness of the state of certain areas to potentially help others be more aware, so they can stay safe during the political seasons.
 
 ### Instructions:
 
