@@ -141,6 +141,8 @@ let stacked_data = [trace2, trace1, trace3,trace4,trace5,trace6,trace7,trace8,tr
 
 let layout_stacked = {
     title: "Total Crimes per Ward",
+    xaxis: {title: "Ward"},
+    yaxis: {title:"Number of Crimes Reported"},
     barmode: "stack",
     showlegend: true, 
 };
@@ -149,7 +151,7 @@ Plotly.newPlot("bar-stacked", stacked_data, layout_stacked);
     
 });
 
-// Create basic default graph
+// Create basic default graph for interactive crime types/ward chart
 var data = [{
     x: [1,2,3,4,5,6,7,8,9],
     y: [0,0,0,0,0,0,0,0],
@@ -215,123 +217,3 @@ function updatePlotly() {
     Plotly.restyle("bar", "x", [x]);
     Plotly.restyle("bar", "y", [y]);
 };
-
-
-// // Stacked bar chart
-// d3.csv(url).then(function(data) {
-//     d3.csv(url).then((data) => {
-//     let crimes = data;
-//     console.log(data)
-
-//     // loop through crimes
-//     for (let i = 0; i<data.length; i++) {
-//         let crime = data[i]
-
-//         // Conditional statements to determine array assignment
-//         if (crime.OFFENSE == "ARSON") {
-//             arson_wards.push(crime.WARD);
-//             arson_count.push(crime.Count);
-//         } else if (crime.OFFENSE == "ASSAULT W/DANGEROUS WEAPON") {
-//             assault_wards.push(crime.WARD);
-//             assault_count.push(crime.Count);
-//         } else if (crime.OFFENSE == "BURGLARY") {
-//             burglary_wards.push(crime.WARD);
-//             burglary_count.push(crime.Count);
-//         } else if (crime.OFFENSE == "HOMICIDE") {
-//             homicide_wards.push(crime.WARD);
-//             homicide_count.push(crime.Count);
-//         } else if (crime.OFFENSE == "MOTOR VEHICLE THEFT") {
-//             motortheft_wards.push(crime.WARD);
-//             motortheft_count.push(crime.Count);
-//         } else if (crime.OFFENSE == "SEX ABUSE") {
-//             sex_wards.push(crime.WARD);
-//             sex_count.push(crime.Count);
-//         } else if (crime.OFFENSE == "ROBBERY") {
-//             robbery_wards.push(crime.WARD);
-//             robbery_count.push(crime.Count);
-//         } else if (crime.OFFENSE == "THEFT F/AUTO") {
-//             theftAuto_wards.push(crime.WARD);
-//             theftAuto_count.push(crime.Count);
-//         } else if (crime.OFFENSE == "THEFT/OTHER") {
-//             theft_wards.push(crime.WARD);
-//             theft_count.push(crime.Count);
-//         }
-//     }});
-console.log(assault_count);
-console.log(assault_wards);
-
-// let wards = [1,2,3,4,5,6,7,8];
-// let trace1 = {
-//     x: wards,
-//     y: [0,1,1,0,0,0,1,1],
-//     name: 'Arson',
-//     type: 'bar',
-//     orientation: "h"
-// };
-
-// let trace2 = {
-//     x: wards,
-//     y: assaultSlice,
-//     name: 'Assault w/ Deadly Weapon',
-//     type: 'bar',
-//     orientation:"h"
-// };
-// let trace3 = {
-//     x: wards,
-//     y: burglarySlice,
-//     name: 'Burglary',
-//     type: 'bar',
-//     orientation:"h"
-// };
-// let trace4 = {
-//     x: wards,
-//     y: homicideSlice,
-//     name: 'Homicide',
-//     type: 'bar',
-//     orientation:"h"
-// };
-// let trace5 = {
-//     x: wards,
-//     y: motorSlice,
-//     name: 'Motor Vehicle Theft',
-//     type: 'bar',
-//     orientation:"h"
-// };
-// let trace6 = {
-//     x: wards,
-//     y: sexSlice,
-//     name: 'Sex Abuse',
-//     type: 'bar',
-//     orientation:"h"
-// };
-// let trace7 = {
-//     x: wards,
-//     y: robberySlice,
-//     name: 'Robbery',
-//     type: 'bar',
-//     orientation:"h"
-// };
-// let trace8 = {
-//     x: wards,
-//     y: theftAutoSlice,
-//     name: 'Theft f/Auto',
-//     type: 'bar',
-//     orientation:"h"
-// };
-// let trace9 = {
-//     x: wards,
-//     y: theftSlice,
-//     name: 'Theft/Other',
-//     type: 'bar',
-//     orientation:"h"
-// };
-
-// let stacked_data = [trace2, trace1, trace3,trace4,trace5,trace6,trace7,trace8,trace9];
-
-// let layout_stacked = {
-//     title: "Total Crimes per Ward",
-//     barmode: "stack",
-//     showlegend: true, 
-// };
-
-// Plotly.newPlot("bar-stacked", stacked_data, layout_stacked);
