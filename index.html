@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Geo JSON</title>
+  <title>DC Crime</title>
 
   <!-- Leaflet CSS -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
@@ -39,29 +39,29 @@
 <body>
   <!-- The div where we'll insert our map -->
   <div id="map"></div>
-<!-- Div with stacked bar chart -->
+  <!-- Div with stacked bar chart -->
   <div id="bar-stacked"></div>
     <!-- Div with interactive bar chart -->
-    <div id="bar"></div>
+  <div id="bar"></div>
 
-        <select id="selDataset">
-            <option value="dataset10">Offense Type</option>
-            <option value="dataset1">Arson</option>
-            <option value="dataset2">Assault w/ Dangerous Weapon</option>
-            <option value="dataset3">Burglary</option>
-            <option value="dataset4">Homicide</option>
-            <option value="dataset5">Motor Vehicle Theft</option>
-            <option value="dataset6">Sex Abuse</option>
-            <option value="dataset7">Robbery</option>
-            <option value="dataset8">Theft F/Auto</option>
-            <option value="dataset9">Theft/Other</option>
-        </select>
+      <select id="selDataset">
+          <option value="dataset10">Offense Type</option>
+          <option value="dataset1">Arson</option>
+          <option value="dataset2">Assault w/ Dangerous Weapon</option>
+          <option value="dataset3">Burglary</option>
+          <option value="dataset4">Homicide</option>
+          <option value="dataset5">Motor Vehicle Theft</option>
+          <option value="dataset6">Sex Abuse</option>
+          <option value="dataset7">Robbery</option>
+          <option value="dataset8">Theft F/Auto</option>
+          <option value="dataset9">Theft/Other</option>
+      </select>
 
 
 
   <!-- JavaScript file -->
-  <script type="text/javascript" src="Static/logic.js"></script>
-  <script type="text/javascript" src="Static/Wards_1.js"></script>
+  <script src="Static/logic.js"></script>
+  <script src="Static/Wards_1.js"></script>
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
   <script src="Static/appMK.js"></script>

@@ -2,7 +2,7 @@
 
 let myMap = L.map("map", {
   center: [38.9072, -77.0369],
-  zoom: 15,
+  zoom: 11,
 })
 let queryUrl = "../Data/Crime_Incidents_in_2021.geojson";
 function init(){
