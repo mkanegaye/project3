@@ -1,31 +1,41 @@
 // Store our API endpoint as queryUrl. *************we still need to change this file to match our geojsons**********************************
-let queryUrl = "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2021-01-01&endtime=2021-01-02&maxlongitude=-69.52148437&minlongitude=-123.83789062&maxlatitude=48.74894534&minlatitude=25.16517337";
 
+let myMap = L.map("map", {
+  center: [38.9072, -77.0369],
+  zoom: 15,
+})
+let queryUrl = "../Data/Crime_Incidents_in_2021.geojson";
+function init(){
 // Perform a GET request to the query URL/
 d3.json(queryUrl).then(function (data) {
   // Once we get a response, send the data.features object to the createFeatures function.
-  createFeatures(data.features);
+  
+  createFeatures(data);
 });
 
-function createFeatures(earthquakeData) {
-
+}
+function createFeatures(crimeData) {
+console.log(crimeData)
   // Define a function that we want to run once for each feature in the features array.
   // Give each feature a popup that describes the place and time of the earthquake.
   function onEachFeature(feature, layer) {
-    layer.bindPopup(`<h3>${feature.properties.place}</h3><hr><p>${new Date(feature.properties.time)}</p>`);
+    layer.bindPopup(`<h3>${feature.properties.SHIFT}</h3><hr><p>${feature.properties.OFFENSE}</p>`);
   }
-
-  // Create a GeoJSON layer that contains the features array on the earthquakeData object.
+function homicide_filter(feature){
+  if(feature.properties.OFFENSE==="HOMICIDE")return true
+}
+  // Create a GeoJSON layer that contains the features array on the crimeData object.
   // Run the onEachFeature function once for each piece of data in the array.
-  let earthquakes = L.geoJSON(earthquakeData, {
-    onEachFeature: onEachFeature
+  let Crime_incidents = L.geoJSON(crimeData, {
+    onEachFeature: onEachFeature, 
+    filter: homicide_filter
   });
 
-  // Send our earthquakes layer to the createMap function/
-  createMap(earthquakes);
+  // Send our crimeData layer to the createMap function/
+  createMap(Crime_incidents);
 }
 
-function createMap(earthquakes) {
+function createMap(crimeData) {
 
   // Create the base layers.
   let street = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -44,23 +54,35 @@ function createMap(earthquakes) {
 
   // Create an overlay object to hold our overlay.
   let overlayMaps = {
-    Earthquakes: earthquakes
+    Crimedata: crimeData
   };
 
-  // Create our map, giving it the streetmap and earthquakes layers to display on load.
-  let myMap = L.map("map", {
-    center: [
-      37.09, -95.71
-    ],
-    zoom: 5,
-    layers: [street, earthquakes]
-  });
-
+  // Create our map, giving it the streetmap and crimeData layers to display on load.
+  // let myMap = L.map("map", {
+  //   center: [38.9072, -77.0369]
+  //   ,
+  //   zoom: 5,
+  //   layers: [street, crimeData]
+  // });
+  // console.log("logic")
   // Create a layer control.
   // Pass it our baseMaps and overlayMaps.
   // Add the layer control to the map.
   L.control.layers(baseMaps, overlayMaps, {
     collapsed: false
   }).addTo(myMap);
+//   // Getting our GeoJSON data
+// d3.json(link).then(function(data) {
+//   // Creating a GeoJSON layer with the retrieved data
+//   L.geoJson(data, {
+//     style: function(feature) {
+//       return {
+//         color: "white",
+//         fillColor: chooseColor(feature.properties.WARD),
+//         fillOpacity: 0.5,
+//         weight: 1.5
+//       };
+    // }
+  // }).addTo(myMap);
 
-}
+}init()
