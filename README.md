@@ -17,6 +17,20 @@ As part of our filtering process, we built in a function feature which can be ed
 While we did initially attempt to add the filters to the map, the sheer size of the crime data prevented the added filters from being an optimal solution due to the power required to pull in all of the data points.  
 <img width="799" alt="image" src="https://github.com/user-attachments/assets/3d2631c9-2614-4623-83c2-d98187c1bb3a">
 
+### Conclusions:
+We analyzed the data to come to various conclusions about the timing of occurrences of crimes (both in terms of time of day and seasonality throughout the year) and where in the district sees the most occurrences of crimes (by Ward). 
+
+From our analysis, we concluded that the most crimes occur during the midnight shift (11pm – 7 am), followed by 
+	Evening (3pm – 11pm)
+	Day (7am – 3)
+
+Additionally, we observed a steep drop in the number of crimes reported in the Winter, specifically February through April, with crimes spiking in the Spring and Summer. Given the weather patterns experienced in Washington DC, it makes sense that crimes would shift in months where it is much colder out.
+However, in comparison to January 2020, January 2021 saw a huge increase in crimes reported.
+
+We wanted to see if there were any patterns to where crimes were committed.  
+We observed that majority of crimes occurred in Ward 2, followed by 5 and 1. It is of note that wards 1 and 2 have a history of racial segregation and restrictive housing covenants. As such, the Western neighborhoods of DC (i.e., Wards 3 and 4) have been racially exclusive
+(https://mappingsegregationdc.org/#maps).
+
 
 ### Ethical Considerations:
 
