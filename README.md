@@ -10,6 +10,8 @@ In regards to specific current events; how things escalate quickly within the po
 As to also bring awareness of the state of certain areas to potentially help others be more aware, so they can stay safe during the political seasons.
 
 ### Instructions:
+Crimes by Ward is filtered by crime type. User can select one of 9 different crime types to compare the occurrences of selected type in each ward. 
+    Note the difference between theft, robbery, and burglary: theft involves taking someone else’s property without the owner’s consent; robbery is similar to theft, but includes an element of violence; burglary requires that an individual enters a structure or dwelling with the intent to commit a crime within. 
 
 
 ### Ethical Considerations:
