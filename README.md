@@ -2,7 +2,7 @@
 
 ![WashDC](https://github.com/user-attachments/assets/33fa4bbf-126b-4e95-8fa9-1247321bcdb5)
 
-### Group Members: Meghan Kanygaye, Jason Crespo, Alex Maciel, Brian Loutzenhiser
+### Group Members: Meghan Kanegaye, Jason Crespo, Alex Maciel, Brian Loutzenhiser
 
 ### Purpose:
 The main purpose of the third project for our group is to investigate the differences in Crime Incidents within the two years of data all regarding current events. 
