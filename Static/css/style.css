@@ -1,10 +1,101 @@
+/* Style for the entire page */
 body {
-  padding: 0;
+  font-family: Arial, sans-serif;
   margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f8f8f8; /* Light background color */
 }
 
-#map,
-body,
-html {
-  height: 100%;
+/* Style for the page title */
+h1 {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Style for the map container */
+#map {
+  height: 80vh; /* Height of the map: 80% of the viewport height */
+  width: 90%; /* Width of the map: 90% of the viewport width */
+  max-width: 1200px; /* Maximum width of the map */
+  margin: 20px auto; /* Center the map */
+  border: 2px solid #ccc; /* Light grey border around the map */
+  border-radius: 8px; /* Rounded corners for the map container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for a raised effect */
+}
+
+/* CSS for ward number labels */
+.ward-label {
+  background-color: white;
+  border-radius: 50%; /* Make the label circular */
+  padding: 5px; /* Padding around the text inside the label */
+  text-align: center;
+  font-weight: bold;
+  color: rgb(68, 0, 255);
+  font-size: 10px;
+  border: 1px solid #FF0000; /* Red border around the label */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for the label */
+  white-space: nowrap; /* Prevent the label text from wrapping */
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  max-width: 500px;
+  border-radius: 8px;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Custom popup style */
+.leaflet-popup-content-wrapper {
+    background: white; /* Ensure the background is white */
+    color: black; /* Set the text color to black */
+    font-family: Arial, sans-serif; /* Set font-family */
+    font-size: 14px; /* Set font-size */
+}
+
+.leaflet-popup-content {
+    margin: 0;
+    padding: 8px;
+}
+
+.leaflet-popup-tip {
+    background: white; /* Ensure the popup tip (arrow) has a white background */
 }
