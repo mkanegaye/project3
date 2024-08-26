@@ -14,8 +14,19 @@ Crimes by Ward is filtered by crime type. User can select one of 9 different cri
     Note the difference between theft, robbery, and burglary: theft involves taking someone else’s property without the owner’s consent; robbery is similar to theft, but includes an element of violence; burglary requires that an individual enters a structure or dwelling with the intent to commit a crime within. 
 
 As part of our filtering process, we built in a function feature which can be edited to display another offense type within the logic.js file. This brief line of code also referenced in the image below ***if(feature.properties.OFFENSE==="HOMICIDE")return true*** can be edited and "HOMICIDE" replaced as needed to bring in different crime data.  This filter can also be duplicated and commented on/Off as needed while creating your visual aids. 
-While we did initially attempt to add the filters to the map, the sheer size of the crime data prevented the added filters from being an optimal solution due to the power required to pull in all of the data points.  
+While we did initially attempt to add the filters to the map, the sheer size of the crime data prevented the added filters from being an optimal solution due to the power required to pull in all of the data points.
+
 <img width="799" alt="image" src="https://github.com/user-attachments/assets/3d2631c9-2614-4623-83c2-d98187c1bb3a">
+
+#### Streamlit Instructions
+** Required Dependencies **:
+ - streamlit
+ - plotly
+
+1. Open up your terminal and activate your virtual environment.
+2. Navigate to the Repo folder where file "app.py" is located using the terminal.
+3. Type `streamlit run app.py` and the app will run through a local server within your default browser.
+4. Follow instructions within the app.
 
 ### Conclusions:
 We analyzed the data to come to various conclusions about the timing of occurrences of crimes (both in terms of time of day and seasonality throughout the year) and where in the district sees the most occurrences of crimes (by Ward). 
