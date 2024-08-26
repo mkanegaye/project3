@@ -19,7 +19,7 @@ While we did initially attempt to add the filters to the map, the sheer size of 
 <img width="799" alt="image" src="https://github.com/user-attachments/assets/3d2631c9-2614-4623-83c2-d98187c1bb3a">
 
 #### Streamlit Instructions
-** Required Dependencies **:
+**Required Dependencies**:
  - streamlit
  - plotly
 
